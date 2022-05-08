@@ -58,6 +58,7 @@ export class Context {
     if (!attrOptions.packagesPath) {
       try {
         attrOptions.packagesPath = await getYamlPackages()
+        console.log('test', attrOptions.packagesPath)
       }
       catch {
         attrOptions.packagesPath = PACKAGES_PATH
